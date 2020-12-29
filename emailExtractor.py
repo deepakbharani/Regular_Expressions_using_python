@@ -20,7 +20,7 @@ urlRegex = re.compile(r'''(
 # Find matches in clipboard text
 text = str(pyperclip.paste())                   # text to be used
 matches = []                                    # create a list to store the matches
-
+ 
 for groups in urlRegex.findall(text):
     matches.append(groups[0])
 
